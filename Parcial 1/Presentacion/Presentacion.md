@@ -49,6 +49,6 @@ Simulación | 94
 Física general | 100
 Taller de Administración | 98
 
-En cuanto a mis hobbies, disfruto mucho el estar escuchando música, además de que también me gusta el bordado y usar mi máquina de coser para cambiar de estilo ropa que siento que lo necesita. Últimamente me ha interesado ver series.
+En cuanto a mis *hobbies*, disfruto mucho el estar escuchando música, además de que también me gusta el bordado y usar mi máquina de coser para cambiar de estilo ropa que siento que lo necesita. Últimamente me ha interesado ver series.
 
-Por último, actualmente no practico algún deporte, pero desde abril empecé a practicar *natación* y mejoró mucho mi habilidad al nadar. 
+Por último, actualmente *no practico algún deporte*, pero desde abril empecé a practicar *natación* y mejoró mucho mi habilidad al nadar. 
