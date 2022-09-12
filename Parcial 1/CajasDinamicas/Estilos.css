@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(207, 194, 214);
+}
+
+.caja {
+    float: left;
+    border: 2px solid rgb(168, 123, 168);
+    width:calc((100% / 6) - 6px);
+    height: 100px;
+    text-align: center;
+    margin: 3px;
+    color:rgb(134, 34, 134);
+}
+
+@media screen and (min-width: 800px) and (max-width:1024px) {
+    #caja4 {
+        clear: left;
+    }
+
+    .caja {
+        width:calc((100% / 3) - 6px);
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .caja {
+        clear: left;
+        width:calc(100% - 6px);
+    }
+}
