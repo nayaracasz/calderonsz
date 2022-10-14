@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div id="caja1" class="caja"><button id="boton1" onclick="alert('Disparando evento por medio de un botón')">Caja 1</button></div>
+        <div id="caja2" class="caja" onclick="alert('Disparando evento sin la necesidad de un botón')">Caja 2</div>
+        <div id="caja3" class="caja">Caja 3</div>
+        <div id="caja4" class="caja">Caja 4</div>
+        <div id="caja5" class="caja">Caja 5</div>
+        <div id="caja6" class="caja">Caja 6</div>
+    </div>
+    <script>
+        //elemento dom
+        document.getElementById("caja3").onclick = function () { alert("Disparando evento utilizando la propiedad onclick") };
+
+        //event listener
+        document.querySelector("#caja5").addEventListener("click", function () { alert("Disparando evento utilizando la función addEventListener") } );
+    </script>
+</body>
+</html>
