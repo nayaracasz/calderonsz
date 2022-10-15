@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="cont" class="contenedor">
+        <div id="caja1" class="caja">Caja 1</div>
+        <div id="caja2" class="caja">Caja 2</div>
+        <div id="caja3" class="caja">Caja 3</div>
+        <div id="caja4" class="caja">Caja 4</div>
+        <div id="caja5" class="caja">Caja 5</div>
+        <div id="caja6" class="caja">Caja 6</div>
+        <div id="caja7" class="caja">Caja 7</div>
+        <div id="caja8" class="cajainvertida">Caja 8</div>
+        <div id="caja9" class="caja">Caja 9</div>
+    </div>
+    
+    <script>
+        var elemento = document.getElementById("cont");
+        elemento.addEventListener("click", cambiarCaja);
+        function cambiarCaja(evento) {
+            console.log(evento);
+            if(document.getElementById(evento.target.id).classList.contains("caja")){
+                document.getElementById(evento.target.id).classList.toggle("cajainvertida");
+            }else{
+                document.getElementById(evento.target.id).classList.toggle("caja");
+            }
+            if(evento.target.id == "caja4"){
+                elemento.removeEventListener("click",cambiarCaja);
+            }
+        }
+    </script>
+</body>
+</html>
