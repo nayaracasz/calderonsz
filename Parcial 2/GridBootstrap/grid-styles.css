@@ -1,0 +1,55 @@
+*{ overflow-x: auto; }
+
+#col11{
+    border: 1px solid #53a39f;
+    background-color: #6dd3ce5e;
+    color: #305a58;
+}
+
+#col21{
+    border: 1px solid #9b674d;
+    background-color: #f7a27857;
+    color: #53382a;
+}
+
+#col12{
+    border: 1px solid #aa5f75;
+    background-color: #f88dad65;
+    color: #7c4a59;
+}
+
+#col22{
+    border: 1px solid #a3822f;
+    background-color: #fac7486b;
+    color: #5a481b;
+}
+
+#col32{
+    border: 1px solid #555ea3;
+    background-color: #8391fa6e;
+    color: #292e4e;
+}
+
+#col13{
+    border: 1px solid #738176;
+    background-color: #d4f2db93;
+    color: #49504a;
+}
+
+#col23{
+    border: 1px solid #7d9661;
+    background-color: #cff7a075;
+    color: #465337;
+}
+
+#col33{
+    border: 1px solid #7c645f;
+    background-color: #ba979069;
+    color: #584744;
+}
+
+#col43{
+    border: 1px solid #5a314a;
+    background-color: #914d766b;
+    color: #462639;
+}
