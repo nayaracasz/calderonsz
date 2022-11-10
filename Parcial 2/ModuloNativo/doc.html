@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modulo</title>
+</head>
+<body>
+    <label for="cad">Cadena</label>
+    <input type="text" id="cad">
+    <button id="btn">Procesar</button>
+    <label for="func" id="function">Funcion</label>
+    <input type="text" disabled id="func">
+    
+    <script type="module">
+        // import estatico, se importa solo lo que se necesita
+        import {mayusculas} from "./modulos.js";
+        document.getElementById("btn").addEventListener("click", () => {
+            let val = document.getElementById("cad").value;
+            let mayus = mayusculas(val);
+            document.getElementById("func").value = mayus;
+            document.getElementById("function").innerText = 'Mayusculas';
+        })
+    </script>
+
+    <script type="module">
+        //import estatico, se importa todo lo que viene en el modulo
+        import * as funciones from "./modulos.js";
+        document.getElementById("btn").addEventListener("click", () => {
+            let val = document.getElementById("cad").value;
+            let minus = funciones.minusculas(val);
+            document.getElementById("func").value = minus;
+            document.getElementById("function").innerText = 'Minusculas';
+        })
+    </script>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", () => {
+            //import dinamico, solo se carga cuando se ocupe
+            import("./modulos.js")
+            .then(function(modulo) {
+                let val = document.getElementById("cad").value;
+                let long = modulo.longitud(val);
+                document.getElementById("function").innerText = 'Longitud';
+                document.getElementById("func").value = long;
+            });
+        })
+    </script>
+</body>
+</html>
