@@ -1,1 +1,0 @@
-document.getElementById("alerta").addEventListener("click",(()=>{swal("Good job!","You clicked the button!","success",{button:"Aww yiss!"})}));
