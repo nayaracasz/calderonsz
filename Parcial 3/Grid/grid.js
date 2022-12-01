@@ -71,8 +71,8 @@ $(document).ready(()=>{
       width: "100%",
       height: "400px",
     
-      // inserting: true,
-      // editing: true,
+      inserting: true,
+      editing: true,
       sorting: true,
       paging: true,
       data: tabla,
