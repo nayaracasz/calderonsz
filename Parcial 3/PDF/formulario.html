@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="formu">
+        <label for="texto"></label>
+        <input type="text" name="texto" id="texto">
+        <input type="submit" value="crear PDF" id="boton"> 
+    </form>
+    
+    <script>
+        document.getElementById("boton").addEventListener("click", async() => {
+            // alert("clickazo en el boton");
+            var nombreform = document.getElementById("formu");
+            var cuerpo = new FormData(nombreform);
+
+            let response = await fetch("./crearpdf.php", { 
+                method: 'POST',
+                body: cuerpo
+            });
+
+            var data = await response.blob();
+            var arcurl = URL.createObjectURL(data);
+            window.open(arcurl);
+        });
+    </script>
+</body>
+</html>
