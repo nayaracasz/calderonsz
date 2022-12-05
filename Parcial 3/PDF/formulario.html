@@ -10,12 +10,11 @@
     <form id="formu">
         <label for="texto"></label>
         <input type="text" name="texto" id="texto">
-        <input type="submit" value="crear PDF" id="boton"> 
+        <input type="button" value="crear PDF" id="boton"> 
     </form>
     
     <script>
         document.getElementById("boton").addEventListener("click", async() => {
-            // alert("clickazo en el boton");
             var nombreform = document.getElementById("formu");
             var cuerpo = new FormData(nombreform);
 
